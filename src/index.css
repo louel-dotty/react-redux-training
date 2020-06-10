@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+div{
+  margin: 0 auto;
+  padding: 5px 10px;
+}
+
+.addToDo{
+  margin: 0 auto;
+  padding: 50px 80px;
+  width: 50%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  background-color: #ffffff;
+}
+
+.addToDo h3{
+  margin: 0 auto;
+  width: 100%;
+  text-align: left;
+  border-bottom: solid 1px #b0b0b0;
+}
+
+label{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.field{
+  height: 30px;
+  width: 80%;
+}
