@@ -16,28 +16,28 @@ export default function MainContainer(){
 
     const tasks = [
         {
-            title: "Task Title",
+            title: "Task Title1",
             content: "Task Details. Lorem Ipsum potaluten"
         },
         {
-            title: "Task Title",
+            title: "Task Title2",
             content: "Task Details. Lorem Ipsum potaluten"
         },   
         {
-            title: "Task Title",
+            title: "Task Title3",
             content: "Task Details. Lorem Ipsum potaluten"
         },
         {
-            title: "Task Title",
+            title: "Task Title4",
             content: "Task Details. Lorem Ipsum potaluten"
         },      
         {
-            title: "Task Title",
+            title: "Task Title5",
             content: "Task Details. Lorem Ipsum potaluten"
         },
         {
-            title: "Task Title",
-            content: "Task Details. Lorem Ipsum potaluten"
+            title: "Task Title6",
+            content: "Task Details. Lorem Ipsum potalutenTask Details. Lorem Ipsum potalutenTask Details. Lorem Ipsum potalutenTask Details. Lorem Ipsum potalutenTask Details. Lorem Ipsum potalutenTask Details. Lorem Ipsum potaluten"
         },           
     ]
 
@@ -45,7 +45,7 @@ export default function MainContainer(){
         <div className="mainContainer">
             <div className="flex-row">
                 <div className="flex-column">
-                    <h1>TaskMaker.com</h1>
+                    <h1>Louel's Task Maker</h1>
                     <div className="addTaskContainer">
                         <Form fields={fields} title="Add Task"/>
                     </div>

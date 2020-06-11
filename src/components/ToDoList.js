@@ -22,7 +22,7 @@ export default function ToDoList(props){
 
     props.taskList.forEach(element => {
         items.push(
-            <ToDoItem title={element.title} content={element.content} />
+            <ToDoItem title={element.title} key={element.title} content={element.content} />
         )
     });
 

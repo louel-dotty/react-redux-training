@@ -7,7 +7,7 @@ export default function Form(props){
         switch(element.type){
             case "text":
                 items.push(
-                    <label>
+                    <label key={element.label}>
                         {element.label}
                         <input className="field" type="text"/>
                     </label>
@@ -15,7 +15,7 @@ export default function Form(props){
                 break;
             case "textarea":
                 items.push(
-                    <label>
+                    <label key={element.label}>
                         {element.label}
                         <textarea className="field"/>
                     </label>

@@ -239,3 +239,7 @@ textarea{
 .item h3{
   margin: 20px 0 2px 0;
 }
+
+.item p{
+  text-align: left;
+}

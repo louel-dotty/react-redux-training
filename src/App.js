@@ -23,6 +23,7 @@ const mapStateToProps = state => ({
   ...state
 })
 
+
 /**
  * @class App
  * @extends {Component}

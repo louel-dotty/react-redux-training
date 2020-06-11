@@ -1,7 +1,8 @@
 export const addTask = (data) => dispatch => {
   dispatch({
     type: 'ADD_NEW_TASK',
-    payload: data
+    title: data.title,
+    content: data.content
   })
 }
 

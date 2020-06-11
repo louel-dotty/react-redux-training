@@ -6,11 +6,11 @@ export default function Filters(props){
     props.titles.forEach(element => {
         if(element.status === "active"){
             items.push(
-                <button className="filter-btn active">{element.title}</button>
+                <button className="filter-btn active" key={element.title}>{element.title}</button>
             );
         } else{
             items.push(
-                <button className="filter-btn">{element.title}</button>
+                <button className="filter-btn" key={element.title}>{element.title}</button>
             );
         }
     })
