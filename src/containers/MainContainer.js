@@ -22,7 +22,23 @@ export default function MainContainer(){
         {
             title: "Task Title",
             content: "Task Details. Lorem Ipsum potaluten"
-        },        
+        },   
+        {
+            title: "Task Title",
+            content: "Task Details. Lorem Ipsum potaluten"
+        },
+        {
+            title: "Task Title",
+            content: "Task Details. Lorem Ipsum potaluten"
+        },      
+        {
+            title: "Task Title",
+            content: "Task Details. Lorem Ipsum potaluten"
+        },
+        {
+            title: "Task Title",
+            content: "Task Details. Lorem Ipsum potaluten"
+        },           
     ]
 
     return (
