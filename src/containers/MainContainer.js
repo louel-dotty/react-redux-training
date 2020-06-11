@@ -1,6 +1,6 @@
 import React from 'react';
 import Form from '../components/Form'
-// import ToDoList from '../components/ToDoList'
+import ToDoList from '../components/ToDoList'
 
 export default function MainContainer(){
     const fields = [
@@ -14,6 +14,17 @@ export default function MainContainer(){
         },
     ];
 
+    const tasks = [
+        {
+            title: "Task Title",
+            content: "Task Details. Lorem Ipsum potaluten"
+        },
+        {
+            title: "Task Title",
+            content: "Task Details. Lorem Ipsum potaluten"
+        },        
+    ]
+
     return (
         <div className="mainContainer">
             <div className="flex-row">
@@ -23,9 +34,7 @@ export default function MainContainer(){
                         <Form fields={fields} title="Add Task"/>
                     </div>
                 </div>
-                <div className="toDos">
-                    {/* <ToDoList /> */}
-                </div>
+                <ToDoList taskList={tasks}/>
             </div>
         </div>
     );
