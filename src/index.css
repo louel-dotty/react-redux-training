@@ -61,7 +61,7 @@ h1{
   align-items: center;
   width: 70%;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 .filters{
