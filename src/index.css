@@ -1,42 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
-html, body {
+html, body, #root {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: #fdfdfd;
 }
 
-div{
-  margin: 0 auto;
-  padding: 5px 10px;
+h1{
+  color: #303030;
 }
 
-.addToDo{
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+  padding: 0;
+}
+
+.toDos{
+  width: 70%;
+}
+
+.addTaskContainer, .mainContainer{
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.addTaskContainer{
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.formCard{
   margin: 0 auto;
-  padding: 50px 80px;
-  width: 50%;
-  height: 160px;
+  padding: 10% 10%;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  background-color: #ffffff;
+  background-color:  #ffffff;
+  box-sizing: border-box;
 }
 
-.addToDo h3{
+.formCard h2{
   margin: 0 auto;
   width: 100%;
   text-align: left;
-  border-bottom: solid 1px #b0b0b0;
 }
 
 label{
@@ -44,10 +76,36 @@ label{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.field{
-  height: 30px;
-  width: 80%;
+input.field{
+  height:50px;
+  width: 70%;
+  box-sizing: border-box;
+  padding: 5%;
+}
+
+textarea{
+  resize: none;
+  height: 150px;
+  width: 70%;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 5%;
+}
+
+.confirm{
+  border: none;
+  padding: 10px 40px;
+  outline: none;
+  background-color: #303030;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.confirm:hover{
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+  background-color: #00ee66;
 }

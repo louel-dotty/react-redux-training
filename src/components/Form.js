@@ -21,13 +21,17 @@ export default function Form(props){
                     </label>
                 );
                 break;
+            default:
+                console.log("Error: Form type not specified");
+                break;
         }
     })
 
     return (
-        <form className="addToDo">
-            <h3>{props.title}</h3>
+        <form className="formCard">
+            <h2>{props.title}</h2>
             {items}
+            <button className="confirm">Add</button>
         </form>
     );
 }

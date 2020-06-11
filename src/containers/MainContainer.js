@@ -1,5 +1,6 @@
 import React from 'react';
 import Form from '../components/Form'
+// import ToDoList from '../components/ToDoList'
 
 export default function MainContainer(){
     const fields = [
@@ -15,13 +16,15 @@ export default function MainContainer(){
 
     return (
         <div className="mainContainer">
-            <h1>To Do List App</h1>
-            <div className="addTaskContainer">
-                <Form fields={fields} title="Add Task"/>
-            </div>
-            <div className="toDoItems">
-                <div className="filters">
-
+            <div className="flex-row">
+                <div className="flex-column">
+                    <h1>TaskMaker.com</h1>
+                    <div className="addTaskContainer">
+                        <Form fields={fields} title="Add Task"/>
+                    </div>
+                </div>
+                <div className="toDos">
+                    {/* <ToDoList /> */}
                 </div>
             </div>
         </div>
