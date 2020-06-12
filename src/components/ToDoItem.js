@@ -1,4 +1,5 @@
 import React from 'react';
+import { removeTask, toggleTask } from '../actions/action'
 
 export default function ToDoItem(props){
     return (
